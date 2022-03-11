@@ -1,0 +1,83 @@
+"$schema": https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+basics:
+  name: Andrea Mandolo
+  label: Senior DevOps Engineer
+  image: profile.png
+  picture: profile.png
+  email: andrea.mandolo@gmail.com
+  phone: "+39 349 4322 551"
+  url: https://andrea.mandolo.net/
+  website: https://andrea.mandolo.net/
+  profiles:
+  - network: Linkedin
+    username: andrea-mandolo
+    url: https://www.linkedin.com/in/andrea-mandolo/
+  summary: |-
+    Passionate about Cloud infrastructure design and management.
+
+    Committed to automating everything that makes the developer's life easier.
+
+    Always searching for the best, simplest and most reproducible solutions
+
+    at the minimal human effort and with the correct robustness and security level.
+  location:
+    city: Monselice (PD)
+    countryCode: IT
+    region: Italy
+work:
+- name: Bitdefender
+  company: Bitdefender
+  url: https://www.bitdefender.com/
+  location: Romania, Iași
+  position: Security Researcher
+  startDate: '2017-04-03'
+  highlights:
+  - Enriched windows emulation techniques and built extensive generic detections based
+    on the metadata extracted from the emulation process as well as detections for
+    well known malicious families such as Emotet • Experience with C/C++, build systems
+    such a make, cmake, ninja, fast/scalable/reliable code. Data processing, matching
+    algorithms at a large scale such as fast string matching to large databases
+  - Created self-sufficient systems for automatic/manual detections on newly discovered
+    malicious files • Python, Go, Docker, SQL/NoSQL databases, metric/log collection,
+    site reliability, fast technology onboarding, efficient big data
+  - Extended parsing/decompiling/detecting/visualizing techniques for executable and
+    non-executable formats as VB6, C# IL, SFX • Fault tolerant and safe code, fast
+    execution in limited environments, undocumented, obfuscated formats research
+- name: AppCUI
+  company: AppCUI
+  url: https://github.com/gdt050579/AppCUI
+  position: Maintainer
+  startDate: '2021-05-20'
+  highlights:
+  - Open source maintainer of a crossplatform multifunctional GUI Library
+  - OSX/Unix frontend ports with SDL2 and ncurses
+  - CMake builds • Github Workflows for Win/OSX/Unix • Valgrind tests • Compliance
+    with the latest C/C++ standards
+education:
+- institution: Alexandru Ioan Cuza University
+  area: Computer Science
+  studyType: Bachelor
+  startDate: '2016-10-01'
+  endDate: '2019-07-15'
+skills:
+- name: Databases
+  keywords:
+  - SQL
+  - Postgres
+  - MongoDB
+  - InfluxDB
+- name: Reverse Engineering
+  level: 9/10
+  keywords:
+  - Binary analysis
+  - Format reversing
+languages:
+- language: Italian
+  fluency: Native speaker
+- language: English
+  fluency: Fluent speaker
+meta:
+  canonical: https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json
+  version: v1.1.0
+  lastModified: '2021-05-29T19:00:32'
+  theme: paper

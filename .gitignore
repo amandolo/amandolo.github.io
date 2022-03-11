@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+
+resume/build/
+resume/src/resume.json
+
+node_modules/
+site/public/
+site/resources/_gen/
+.hugo_build.lock
