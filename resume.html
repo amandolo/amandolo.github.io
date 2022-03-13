@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>@charset "UTF-8";
+/* Workaround for 'break-before:avoid' */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; }
+
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+span {
+  display: block; }
+
+p {
+  margin: 0; }
+
+@page {
+  size: A4;
+  margin: 15mm 0 20mm 0; }
+
+@page :first {
+  margin-top: 10mm; }
+
+a {
+  color: #222222;
+  font-weight: inherit;
+  text-decoration: none; }
+  a[href] {
+    text-decoration: underline;
+    text-decoration-color: #555555; }
+
+p {
+  line-height: 1.2; }
+
+li {
+  line-height: 1.3; }
+  li:first-child {
+    margin-top: 0; }
+
+.content {
+  width: 1000px;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222222; }
+
+.table {
+  width: 100%;
+  display: table;
+  padding: 20px 0; }
+  .table .main {
+    display: table-cell;
+    width: 70%;
+    padding-right: 50px; }
+    .table .main .highlights {
+      width: auto;
+      display: block;
+      padding: 0 10px;
+      margin-top: 12.30769px;
+      margin-bottom: 0;
+      columns: 2;
+      column-width: 310px;
+      column-gap: 10px; }
+      .table .main .highlights li {
+        font-size: 14px;
+        list-style: none;
+        line-height: 1.2; }
+        .table .main .highlights li:before {
+          content: "· ";
+          vertical-align: middle; }
+  .table .side {
+    display: table-cell;
+    width: 30%;
+    padding-left: 50px;
+    text-align: right; }
+    .table .side p {
+      line-height: 1.3; }
+
+.section-title {
+  font-size: 26px;
+  font-weight: normal;
+  margin: 0 0 20px 0; }
+
+.margin-container-2:not(:first-child) {
+  margin-top: 20px; }
+
+.margin-container-3:not(:first-child) {
+  margin-top: 30px; }
+
+.margin-container-4:not(:first-child) {
+  margin-top: 50px; }
+
+.margin-text-1 {
+  margin-top: 0.25em; }
+  .margin-text-1:empty {
+    display: none; }
+
+.margin-text-2 {
+  margin-top: 0.5em; }
+  .margin-text-2:empty {
+    display: none; }
+
+.margin-text-3 {
+  margin-top: 1em; }
+  .margin-text-3:empty {
+    display: none; }
+
+.no-break {
+  break-inside: avoid; }
+
+.no-alone-1 {
+  break-inside: avoid; }
+  .no-alone-1::after {
+    content: "";
+    display: block;
+    height: 75px;
+    margin-bottom: -75px; }
+
+.no-alone-2 {
+  break-inside: avoid; }
+  .no-alone-2::after {
+    content: "";
+    display: block;
+    height: 150px;
+    margin-bottom: -150px; }
+
+.markdown h1 {
+  font-size: 160%;
+  font-weight: bolder; }
+
+.markdown h2 {
+  font-size: 150%;
+  font-weight: bolder; }
+
+.markdown h3 {
+  font-size: 140%;
+  font-weight: bolder; }
+
+.markdown h4 {
+  font-size: 130%;
+  font-weight: bold; }
+
+.markdown h5 {
+  font-size: 120%;
+  font-weight: bold; }
+
+.markdown h6 {
+  font-size: 110%;
+  font-weight: bold; }
+
+.markdown ul, .markdown ol {
+  margin-left: 20px; }
+
+.markdown img {
+  display: block;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center; }
+
+.markdown blockquote {
+  margin: 20px 0;
+  padding: 15px 20px; }
+  .markdown blockquote p {
+    display: inline; }
+
+.markdown code {
+  font-family: monospace; }
+
+.basics .main {
+  vertical-align: middle; }
+  .basics .main .name {
+    font-size: 80px;
+    line-height: 1em;
+    font-weight: bold;
+    display: block;
+    margin-left: -5.6px; }
+  .basics .main .label {
+    font-size: 40px;
+    line-height: 1em;
+    font-weight: lighter;
+    display: block;
+    margin-left: -1.6px; }
+
+.basics .side {
+  vertical-align: middle;
+  padding-left: 0;
+  padding-top: 15px; }
+  .basics .side .contact {
+    font-size: 18px;
+    list-style-type: none; }
+    .basics .side .contact li {
+      line-height: 1.5em; }
+
+.basics .summary {
+  font-size: 16px;
+  padding: 20px 0; }
+
+.work .header .table {
+  padding: 0; }
+  .work .header .table .left {
+    display: table-cell; }
+    .work .header .table .left .position {
+      font-size: 18px;
+      font-weight: bold;
+      display: block; }
+    .work .header .table .left .company-location {
+      font-size: 15px;
+      font-weight: lighter;
+      display: block; }
+      .work .header .table .left .company-location a {
+        text-decoration-color: #888888; }
+  .work .header .table .right {
+    text-align: right;
+    display: table-cell; }
+    .work .header .table .right .dates {
+      font-size: 15px;
+      font-weight: lighter; }
+
+.work .summary {
+  font-size: 16px;
+  padding: 0;
+  margin-top: 12.30769px; }
+  .work .summary:empty {
+    display: none; }
+
+.projects .header .name {
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block; }
+  .projects .header .name a {
+    text-decoration-color: #222222; }
+
+.projects .header .roles {
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block; }
+
+.projects .description {
+  font-size: 16px;
+  padding: 0;
+  margin-top: 12.30769px; }
+  .projects .description:empty {
+    display: none; }
+
+.skills .section-title {
+  margin: 0; }
+
+.skills .container {
+  display: block;
+  columns: 2;
+  column-gap: 10px; }
+  .skills .container .article {
+    break-inside: avoid-column;
+    width: 120px;
+    padding-top: 20px; }
+    .skills .container .article span {
+      display: block;
+      font-size: 18px;
+      font-weight: lighter; }
+    .skills .container .article li {
+      font-size: 14px;
+      list-style: none;
+      line-height: 1.3; }
+
+.education .title {
+  font-size: 15px; }
+
+.education .institution {
+  font-size: 15px;
+  font-weight: lighter; }
+  .education .institution a {
+    text-decoration-color: #888888; }
+
+.certificates .name {
+  font-size: 15px; }
+
+.certificates .issuer {
+  font-size: 15px;
+  font-weight: lighter;
+  margin-top: 0.35em; }
+
+.awards .header .title {
+  font-size: 16px;
+  display: inline-block; }
+
+.awards .header .awarder {
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 16px;
+  display: inline-block; }
+
+.awards .summary {
+  font-size: 14px; }
+
+.languages ul {
+  list-style: none; }
+  .languages ul li {
+    font-size: 14px; }
+
+.interests ul {
+  list-style: none; }
+  .interests ul li {
+    font-size: 14px; }
+
+.links ul {
+  list-style: none; }
+  .links ul li {
+    font-size: 14px; }
+</style><title>Actual theme for JSON Resume</title></head><body><div class="content"><div class="basics"><div class="table"><div class="main"><span class="name">Andrea Mandolo</span><span class="label">Senior DevOps Engineer</span></div><div class="side"><ul class="contact"><li>+39 349 4322 551</li><li>andrea.mandolo@gmail.com</li><li class="margin-text-3">Monselice (PD), Italy, IT</li></ul></div></div><div class="summary markdown"><p>Passionate about Cloud infrastructure design and management.</p>
+<p>Committed to automating everything that makes the developer's life easier.</p>
+<p>Always searching for the best, simplest and most reproducible solutions</p>
+<p>at the minimal human effort and with the correct robustness and security level.</p>
+</div></div><div class="table"><div class="main"><div class="work margin-container-4"><p class="section-title no-alone-2">Experience</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position">Security Researcher</span><span class="company-location margin-text-1"><a href="https://www.bitdefender.com/">Bitdefender</a> · Romania, Iași</span></div><div class="right"><span class="dates">Apr 2017 - Present</span></div></div></div><div class="summary markdown"></div><ul class="highlights no-break"><li>Enriched windows emulation techniques and built extensive generic detections based
+on the metadata extracted from the emulation process as well as detections for
+well known malicious families such as Emotet • Experience with C/C++, build systems
+such a make, cmake, ninja, fast/scalable/reliable code. Data processing, matching
+algorithms at a large scale such as fast string matching to large databases</li><li>Created self-sufficient systems for automatic/manual detections on newly discovered
+malicious files • Python, Go, Docker, SQL/NoSQL databases, metric/log collection,
+site reliability, fast technology onboarding, efficient big data</li><li>Extended parsing/decompiling/detecting/visualizing techniques for executable and
+non-executable formats as VB6, C# IL, SFX • Fault tolerant and safe code, fast
+execution in limited environments, undocumented, obfuscated formats research</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position">Maintainer</span><span class="company-location margin-text-1"><a href="https://github.com/gdt050579/AppCUI">AppCUI</a></span></div><div class="right"><span class="dates">May 2021 - Present</span></div></div></div><div class="summary markdown"></div><ul class="highlights no-break"><li>Open source maintainer of a crossplatform multifunctional GUI Library</li><li>OSX/Unix frontend ports with SDL2 and ncurses</li><li>CMake builds • Github Workflows for Win/OSX/Unix • Valgrind tests • Compliance
+with the latest C/C++ standards</li></ul></div></div></div></div><div class="side"><div class="skills margin-container-4"><p class="section-title no-alone-1">Skills</p><div class="container"><div class="article no-break"><span>Databases</span><ul class="margin-text-1"><li>SQL</li><li>Postgres</li><li>MongoDB</li><li>InfluxDB</li></ul></div><div class="article no-break"><span>Reverse Engineering</span><ul class="margin-text-1"><li>Binary analysis</li><li>Format reversing</li></ul></div></div></div><div class="education margin-container-4"><p class="section-title no-alone-1">Education</p><div class="container"><div class="article margin-container-2 no-break"><div class="title markdown"><p>Bachelor, Computer Science</p>
+</div><span class="institution margin-text-1"><a>Alexandru Ioan Cuza University</a></span></div></div></div><div class="languages margin-container-4 no-break"><p class="section-title no-alone-1">Languages</p><div class="container"><ul><li class="article margin-text-1">Italian · Native speaker</li><li class="article margin-text-1">English · Fluent speaker</li></ul></div></div><div class="links margin-container-4 no-break"><p class="section-title no-alone-1">Links</p><div class="container"><ul><li class="article"><a href="https://andrea.mandolo.net/"><strong>andrea.mandolo.net</strong></a></li><li class="article margin-text-2"><a href="https://www.linkedin.com/in/andrea-mandolo/"><strong>linkedin.com</strong>/in/andrea-mandolo</a></li></ul></div></div></div></div></div></body></html>
