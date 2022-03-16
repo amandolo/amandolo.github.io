@@ -6,76 +6,176 @@ basics:
   picture: profile.png
   email: andrea.mandolo@gmail.com
   phone: "+39 349 4322 551"
+  location:
+    city: Monselice (PD)
+    countryCode: IT
+    region: Veneto
+
   url: https://andrea.mandolo.net/
   website: https://andrea.mandolo.net/
   profiles:
   - network: Linkedin
     username: andrea-mandolo
     url: https://www.linkedin.com/in/andrea-mandolo/
+  - network: GitHub
+    username: amandolo
+    url: https://github.com/amandolo
+
   summary: |-
-    Passionate about Cloud infrastructure design and management.
+    Passionate about infrastructure development. Committed from 10 years to automate everything that makes the developer's life better.
 
-    Committed to automating everything that makes the developer's life easier.
+    Always searching for the simplest, cost-effective, and most maintainable solutions, always assuring the best level of security as possible.
 
-    Always searching for the best, simplest and most reproducible solutions
-
-    at the minimal human effort and with the correct robustness and security level.
-  location:
-    city: Monselice (PD)
-    countryCode: IT
-    region: Italy
 work:
-- name: Bitdefender
-  company: Bitdefender
-  url: https://www.bitdefender.com/
-  location: Romania, Iași
-  position: Security Researcher
-  startDate: '2017-04-03'
+- name: THRON S.p.A.
+  position: Senior DevOps Engineer
+  url: https://www.thron.com/
+  startDate: '2018-01'
+  summary: |-
+    During these years my main responsibilities are:
+    - evolve the infrastructure and development processes (k8s and CD)
+    - support juniors to grow continuously and become a landmark to the other teams
+    - maintain aligned all infrastructure people across different teams
+    - improve the security of the whole platform and the development flows
+    - achieve the ISO-27001 certification, adopting all its best practices
+    - optimize AWS costs with reservation plans and a cost-effective approach
+    - refactor the AWS organization, to easily manage the existing accounts and the new ones
+    - migrate on-premise MongoDb clusters to the Atlas managed ecosystem
   highlights:
-  - Enriched windows emulation techniques and built extensive generic detections based
-    on the metadata extracted from the emulation process as well as detections for
-    well known malicious families such as Emotet • Experience with C/C++, build systems
-    such a make, cmake, ninja, fast/scalable/reliable code. Data processing, matching
-    algorithms at a large scale such as fast string matching to large databases
-  - Created self-sufficient systems for automatic/manual detections on newly discovered
-    malicious files • Python, Go, Docker, SQL/NoSQL databases, metric/log collection,
-    site reliability, fast technology onboarding, efficient big data
-  - Extended parsing/decompiling/detecting/visualizing techniques for executable and
-    non-executable formats as VB6, C# IL, SFX • Fault tolerant and safe code, fast
-    execution in limited environments, undocumented, obfuscated formats research
-- name: AppCUI
-  company: AppCUI
-  url: https://github.com/gdt050579/AppCUI
-  position: Maintainer
-  startDate: '2021-05-20'
+  - security and compliance
+  - technological strategy
+  - DevOps and infrastructure leadership
+  - infrastructural mentoring
+- name: UniSMART - University of Padua Foundation
+  position: Full-stack developer (free time)
+  url: https://www.unismart.it/
+  startDate: '2020-11'
+  endDate: '2021-04'
+  summary: Implement the Academy Web Portal to allow Master's course proposals management
   highlights:
-  - Open source maintainer of a crossplatform multifunctional GUI Library
-  - OSX/Unix frontend ports with SDL2 and ncurses
-  - CMake builds • Github Workflows for Win/OSX/Unix • Valgrind tests • Compliance
-    with the latest C/C++ standards
+  - Analysis of requirements and architecture
+  - Design the User Experience (with Vue.js)
+  - Server-side Rendering (with Nuxt.js)
+  - Design the APIs (with Strapi)
+  - Modeling a MongoDB database
+  - Manage SEO and legal aspects
+- name: THRON S.p.A.
+  position: DevOps Engineer
+  url: https://www.thron.com/
+  startDate: '2012-01'
+  endDate: '2018-01'
+  summary: |-
+    Mainly, my energies are focused on:
+    - migrate the physical datacenters to the AWS cloud
+    - switch workloads from Windows to Linux
+    - develop automated workflows to build and securely deploy the code
+    - encourage adoption of new design patterns and methodologies (microservices, containerization, serverless)
+    - manage a CDN layer in front of the origins to improve their performance, reachability, and availability (also for China)
+    - maintain the MongoDB clusters to an EC2 implementation
+    - contribute to the media-conversion system refactoring
+    - define the backup and disaster recovery strategies of the platform
+    - create tools for developers to help their day-by-day projects
+    - evolve a huge Live Media Streaming worldwide ecosystem with CDN accelerations
+  highlights:
+  - cloud migration
+  - architectural simplification
+  - automated deployment
+  - microservices
+  - containerization
+  - serverless approach
+- name: THRON S.p.A.
+  position: Full-stack Developer
+  url: https://www.thron.com/
+  startDate: '2011-04'
+  endDate: '2012-01'
+  summary: Analysis, design, and development of a prototype network appliance to improve the delivery and caching of contents in customer networks
+  highlights:
+  - delivery optimization
+  - transparent caching
+  - on-premise devices and IDCs
+  - DNS manipulation
+
+certificates:
+- name: AWS Solutions Architect – Associate
+  date: '2020-08'
+  issuer: Amazon Web Services (AWS)
+  url: https://www.credly.com/badges/cf3637bf-115f-4da9-b39c-926367ecee19
+#- name: Akamai Web Performance
+#  date: '2017-08'
+#  issuer: Akamai Technologies
+#  url: https://www.credly.com/badges/1bcfac67-d419-4fed-90f4-3d8fbb18b2d0
+
 education:
-- institution: Alexandru Ioan Cuza University
+- institution: University of Padua
   area: Computer Science
   studyType: Bachelor
-  startDate: '2016-10-01'
-  endDate: '2019-07-15'
+  startDate: '2008'
+  endDate: '2011'
+#- institution: University of Padua
+#  area: Computer Engineering
+#  studyType: Bachelor
+#  startDate: '2006'
+#  endDate: '2008'
+
 skills:
-- name: Databases
+- name: Cloud
   keywords:
-  - SQL
-  - Postgres
-  - MongoDB
-  - InfluxDB
-- name: Reverse Engineering
-  level: 9/10
+  - AWS
+  - Serverless
+  - SQL/NoSQL DBs
+- name: Networking
   keywords:
-  - Binary analysis
-  - Format reversing
+  - API Gateway
+  - Service Mesh
+  - Nginx
+- name: DevOps
+  keywords:
+  - GitOps
+  - CI / CD
+  - Jenkins, Ansible
+  - Linux
+  - Prometheus
+- name: Containers
+  keywords:
+  - Docker
+  - AWS ECS
+  - Kubernetes
+- name: CDN
+  keywords:
+  - Akamai / Caching
+  - China Delivery
+- name: Big Data
+  keywords:
+  - Spark
+  - ETL pipelines
+  - ELK stacks
+- name: Streaming
+  keywords:
+  - Wowza
+  - AWS MediaLive
+- name: Languages
+  keywords:
+  - Python / Bash
+  - Java / Javascript
+  - Go / Scala
+- name: Soft
+  keywords:
+  - Problem-solving
+  - Critical thinking
+  - Communication
+  - Leadership
+
 languages:
 - language: Italian
   fluency: Native speaker
 - language: English
   fluency: Fluent speaker
+
+#interests:
+#- name: adasd
+#  keywords:
+#  - asdasd
+
 meta:
   canonical: https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json
   version: v1.1.0
