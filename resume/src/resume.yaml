@@ -37,15 +37,15 @@ work:
     - support juniors to grow continuously and become a landmark to the other teams
     - maintain aligned all infrastructure people across different teams
     - improve the security of the whole platform and the development flows
-    - achieve the ISO-27001 certification, adopting all its best practices
-    - optimize AWS costs with reservation plans and a cost-effective approach
+    - adopting best practices everywhere, to achieve the ISO-27001 certification
+    - optimize AWS costs with detailed reservation plans and cost-effective architectures
     - refactor the AWS organization, to easily manage the existing accounts and the new ones
     - migrate on-premise MongoDb clusters to the Atlas managed ecosystem
   highlights:
   - security and compliance
   - technological strategy
-  - DevOps and infrastructure leadership
-  - infrastructural mentoring
+  - DevOps leadership and mentoring
+  - cost-effective architectures
 - name: UniSMART - University of Padua Foundation
   position: Full-stack developer (free time)
   url: https://www.unismart.it/
