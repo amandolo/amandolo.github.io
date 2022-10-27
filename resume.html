@@ -4,40 +4,49 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%; }
+  font-size: 100%;
+}
 
 ul, li {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
-span {
-  display: block; }
+span, q {
+  display: block;
+}
 
 p {
-  margin: 0; }
+  margin: 0;
+}
 
 @page {
   size: A4;
-  margin: 15mm 0 20mm 0; }
-
+  margin: 15mm 0 20mm 0;
+}
 @page :first {
-  margin-top: 10mm; }
-
+  margin-top: 10mm;
+}
 a {
   color: #222222;
   font-weight: inherit;
-  text-decoration: none; }
-  a[href] {
-    text-decoration: underline;
-    text-decoration-color: #555555; }
+  text-decoration: none;
+}
+a[href] {
+  text-decoration: underline;
+  text-decoration-color: #888888;
+}
 
-p {
-  line-height: 1.2; }
+p, q {
+  line-height: 1.25em;
+}
 
 li {
-  line-height: 1.3; }
-  li:first-child {
-    margin-top: 0; }
+  line-height: 1.35em;
+}
+li:first-child {
+  margin-top: 0;
+}
 
 .content {
   width: 1000px;
@@ -45,273 +54,308 @@ li {
   padding: 0 50px;
   margin: 0 auto;
   font-family: Helvetica, Arial, sans-serif;
-  color: #222222; }
+  color: #222222;
+}
 
 .table {
   width: 100%;
   display: table;
-  padding: 20px 0; }
-  .table .main {
-    display: table-cell;
-    width: 70%;
-    padding-right: 50px; }
-    .table .main .highlights {
-      width: auto;
-      display: block;
-      padding: 0 10px;
-      margin-top: 12.30769px;
-      margin-bottom: 0;
-      columns: 2;
-      column-width: 310px;
-      column-gap: 10px; }
-      .table .main .highlights li {
-        font-size: 14px;
-        list-style: none;
-        line-height: 1.2; }
-        .table .main .highlights li:before {
-          content: "· ";
-          vertical-align: middle; }
-  .table .side {
-    display: table-cell;
-    width: 30%;
-    padding-left: 50px;
-    text-align: right; }
-    .table .side p {
-      line-height: 1.3; }
+}
+.table .main {
+  display: table-cell;
+  width: 70%;
+  padding-right: 50px;
+}
+.table .side {
+  display: table-cell;
+  width: 30%;
+  padding-left: 50px;
+  text-align: right;
+}
+
+.summary {
+  font-size: 15px;
+}
+.summary:empty {
+  display: none;
+}
 
 .section-title {
   font-size: 26px;
   font-weight: normal;
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px 0;
+}
 
 .margin-container-2:not(:first-child) {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 .margin-container-3:not(:first-child) {
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
 .margin-container-4:not(:first-child) {
-  margin-top: 50px; }
+  margin-top: 50px;
+}
+
+.padding-container-2 {
+  padding: 20px 0;
+}
 
 .margin-text-1 {
-  margin-top: 0.25em; }
-  .margin-text-1:empty {
-    display: none; }
+  margin-top: 2px;
+}
+.margin-text-1:empty {
+  display: none;
+}
 
 .margin-text-2 {
-  margin-top: 0.5em; }
-  .margin-text-2:empty {
-    display: none; }
+  margin-top: 4px;
+}
+.margin-text-2:empty {
+  display: none;
+}
 
 .margin-text-3 {
-  margin-top: 1em; }
-  .margin-text-3:empty {
-    display: none; }
+  margin-top: 6px;
+}
+.margin-text-3:empty {
+  display: none;
+}
+
+.margin-text-4 {
+  margin-top: 8px;
+}
+.margin-text-4:empty {
+  display: none;
+}
+
+.margin-text-5 {
+  margin-top: 14px;
+}
+.margin-text-5:empty {
+  display: none;
+}
 
 .no-break {
-  break-inside: avoid; }
+  break-inside: avoid;
+}
 
 .no-alone-1 {
-  break-inside: avoid; }
-  .no-alone-1::after {
-    content: "";
-    display: block;
-    height: 75px;
-    margin-bottom: -75px; }
+  break-inside: avoid;
+}
+.no-alone-1::after {
+  content: "";
+  display: block;
+  height: 75px;
+  margin-bottom: -75px;
+}
 
 .no-alone-2 {
-  break-inside: avoid; }
-  .no-alone-2::after {
-    content: "";
-    display: block;
-    height: 150px;
-    margin-bottom: -150px; }
+  break-inside: avoid;
+}
+.no-alone-2::after {
+  content: "";
+  display: block;
+  height: 150px;
+  margin-bottom: -150px;
+}
 
 .markdown h1 {
   font-size: 160%;
-  font-weight: bolder; }
-
+  font-weight: bolder;
+}
 .markdown h2 {
   font-size: 150%;
-  font-weight: bolder; }
-
+  font-weight: bolder;
+}
 .markdown h3 {
   font-size: 140%;
-  font-weight: bolder; }
-
+  font-weight: bolder;
+}
 .markdown h4 {
   font-size: 130%;
-  font-weight: bold; }
-
+  font-weight: bold;
+}
 .markdown h5 {
   font-size: 120%;
-  font-weight: bold; }
-
+  font-weight: bold;
+}
 .markdown h6 {
   font-size: 110%;
-  font-weight: bold; }
-
+  font-weight: bold;
+}
 .markdown ul, .markdown ol {
-  margin-left: 20px; }
-
+  margin-left: 20px;
+}
 .markdown img {
   display: block;
   margin: 20px auto;
   max-width: 1000px;
-  text-align: center; }
-
+  text-align: center;
+}
 .markdown blockquote {
   margin: 20px 0;
-  padding: 15px 20px; }
-  .markdown blockquote p {
-    display: inline; }
-
+  padding: 15px 20px;
+}
+.markdown blockquote p {
+  display: inline;
+}
 .markdown code {
-  font-family: monospace; }
+  font-family: monospace;
+}
+
+.main .highlights {
+  width: auto;
+  display: block;
+  padding: 0 10px;
+  margin-bottom: 0;
+  columns: 2;
+  column-width: 310px;
+  column-gap: 10px;
+}
+.main .highlights li {
+  font-size: 14px;
+  list-style: none;
+}
+.main .highlights li:before {
+  content: "· ";
+  vertical-align: middle;
+}
+.main .left {
+  display: table-cell;
+}
+.main .left .title {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+.main .left .subtitle {
+  font-size: 16px;
+  font-weight: lighter;
+  display: block;
+}
+.main .right {
+  text-align: right;
+  display: table-cell;
+}
+.main .right .date {
+  font-size: 15px;
+  font-weight: lighter;
+  white-space: nowrap;
+}
 
 .basics .main {
-  vertical-align: middle; }
-  .basics .main .name {
-    font-size: 80px;
-    line-height: 1em;
-    font-weight: bold;
-    display: block;
-    margin-left: -5.6px; }
-  .basics .main .label {
-    font-size: 40px;
-    line-height: 1em;
-    font-weight: lighter;
-    display: block;
-    margin-left: -1.6px; }
-
+  vertical-align: middle;
+}
+.basics .main .name {
+  font-size: 80px;
+  line-height: 1em;
+  font-weight: bold;
+  display: block;
+  margin-left: -5.6px;
+}
+.basics .main .label {
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: lighter;
+  display: block;
+  margin-left: -1.6px;
+}
 .basics .side {
   vertical-align: middle;
   padding-left: 0;
-  padding-top: 15px; }
-  .basics .side .contact {
-    font-size: 18px;
-    list-style-type: none; }
-    .basics .side .contact li {
-      line-height: 1.5em; }
-
-.basics .summary {
-  font-size: 16px;
-  padding: 20px 0; }
-
-.work .header .table {
-  padding: 0; }
-  .work .header .table .left {
-    display: table-cell; }
-    .work .header .table .left .position {
-      font-size: 18px;
-      font-weight: bold;
-      display: block; }
-    .work .header .table .left .company-location {
-      font-size: 15px;
-      font-weight: lighter;
-      display: block; }
-      .work .header .table .left .company-location a {
-        text-decoration-color: #888888; }
-  .work .header .table .right {
-    text-align: right;
-    display: table-cell; }
-    .work .header .table .right .dates {
-      font-size: 15px;
-      font-weight: lighter; }
-
-.work .summary {
-  font-size: 16px;
-  padding: 0;
-  margin-top: 12.30769px; }
-  .work .summary:empty {
-    display: none; }
-
-.projects .header .name {
+  padding-top: 15px;
+}
+.basics .side .contact {
+  list-style-type: none;
+}
+.basics .side .contact li {
   font-size: 18px;
-  font-weight: bold;
-  display: inline-block; }
-  .projects .header .name a {
-    text-decoration-color: #222222; }
+  line-height: 1.6em;
+}
 
-.projects .header .roles {
-  font-size: 16px;
-  line-height: 18px;
-  display: inline-block; }
-
-.projects .description {
-  font-size: 16px;
-  padding: 0;
-  margin-top: 12.30769px; }
-  .projects .description:empty {
-    display: none; }
-
-.skills .section-title {
-  margin: 0; }
-
-.skills .container {
-  display: block;
-  columns: 2;
-  column-gap: 10px; }
-  .skills .container .article {
-    break-inside: avoid-column;
-    width: 120px;
-    padding-top: 20px; }
-    .skills .container .article span {
-      display: block;
-      font-size: 18px;
-      font-weight: lighter; }
-    .skills .container .article li {
-      font-size: 14px;
-      list-style: none;
-      line-height: 1.3; }
+.links ul {
+  list-style: none;
+}
+.links ul li {
+  font-size: 14px;
+}
 
 .education .title {
-  font-size: 15px; }
-
+  font-size: 15px;
+}
 .education .institution {
   font-size: 15px;
-  font-weight: lighter; }
-  .education .institution a {
-    text-decoration-color: #888888; }
-
-.certificates .name {
-  font-size: 15px; }
-
-.certificates .issuer {
-  font-size: 15px;
   font-weight: lighter;
-  margin-top: 0.35em; }
+}
 
 .awards .header .title {
-  font-size: 16px;
-  display: inline-block; }
-
+  font-size: 15px;
+}
 .awards .header .awarder {
   font-size: 15px;
   font-weight: lighter;
-  line-height: 16px;
-  display: inline-block; }
-
+}
 .awards .summary {
-  font-size: 14px; }
+  font-size: 14px;
+}
+
+.certificates .name {
+  font-size: 15px;
+}
+.certificates .issuer {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.skills .section-title {
+  margin: 0;
+}
+.skills .container {
+  display: block;
+  columns: 2;
+  column-gap: 10px;
+}
+.skills .container .article {
+  break-inside: avoid-column;
+  min-width: 120px;
+  padding-top: 20px;
+}
+.skills .container .article span {
+  display: block;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.skills .container .article li {
+  font-size: 14px;
+  list-style: none;
+}
 
 .languages ul {
-  list-style: none; }
-  .languages ul li {
-    font-size: 14px; }
+  list-style: none;
+}
+.languages ul li {
+  font-size: 14px;
+}
 
 .interests ul {
-  list-style: none; }
-  .interests ul li {
-    font-size: 14px; }
+  list-style: none;
+}
+.interests ul li {
+  font-size: 14px;
+}
 
-.links ul {
-  list-style: none; }
-  .links ul li {
-    font-size: 14px; }
-</style><title>Actual theme for JSON Resume</title></head><body><div class="content"><div class="basics"><div class="table"><div class="main"><span class="name">Andrea Mandolo</span><span class="label">Senior DevOps Engineer</span></div><div class="side"><ul class="contact"><li>+39 349 4322 551</li><li>andrea.mandolo@gmail.com</li><li class="margin-text-3">Monselice (PD), Veneto, IT</li></ul></div></div><div class="summary markdown"><p>Passionate about infrastructure development. Committed from 10 years to automate everything that makes the developer's life better.</p>
+.references .name {
+  font-size: 15px;
+}
+.references q {
+  font-size: 14.5px;
+  font-weight: lighter;
+  font-style: italic;
+}</style><title>Resume Andrea Mandolo – Senior DevOps Engineer</title></head><body><div class="content"><div class="basics"><div class="table padding-container-2"><div class="main"><span class="name">Andrea Mandolo</span><span class="label">Senior DevOps Engineer</span></div><div class="side"><ul class="contact"><li>+39 349 4322 551</li><li>andrea.mandolo@gmail.com</li><li class="margin-text-5">Monselice (PD), Veneto, IT</li></ul></div></div><div class="summary markdown padding-container-2"><p>Passionate about infrastructure development. Committed from 11 years to automate everything that makes the developer's life better.</p>
 <p>Always searching for the simplest, cost-effective, and most maintainable solutions, always assuring the best level of security as possible.</p>
-</div></div><div class="table"><div class="main"><div class="work margin-container-4"><p class="section-title no-alone-2">Experience</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position">Senior DevOps Engineer</span><span class="company-location margin-text-1"><a href="https://www.thron.com/">THRON S.p.A.</a></span></div><div class="right"><span class="dates">Jan 2018 - Present</span></div></div></div><div class="summary markdown"><p>During these years my main responsibilities are:</p>
+</div></div><div class="table padding-container-2"><div class="main"><div class="work margin-container-4"><p class="section-title no-alone-2">Experience</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">DevOps Engineer</span><span class="subtitle margin-text-1"><a href="https://www.lastminute.com/">lastminute.com</a></span></div><div class="right"><span class="date">Sep 2022 - Present</span></div></div></div><div class="summary markdown margin-text-4"></div></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Senior DevOps Engineer</span><span class="subtitle margin-text-1"><a href="https://www.thron.com/">THRON S.p.A.</a></span></div><div class="right"><span class="date">Jan 2018 - Sep 2022</span></div></div></div><div class="summary markdown margin-text-4"><p>During these years my main responsibilities are:</p>
 <ul>
 <li>evolve the infrastructure and development processes (k8s and CD)</li>
 <li>support juniors to grow continuously and become a landmark to the other teams</li>
@@ -320,23 +364,20 @@ li {
 <li>adopting best practices everywhere, to achieve the ISO-27001 certification</li>
 <li>optimize AWS costs with detailed reservation plans and cost-effective architectures</li>
 <li>refactor the AWS organization, to easily manage the existing accounts and the new ones</li>
-<li>migrate on-premise MongoDb clusters to the Atlas managed ecosystem</li>
 </ul>
-</div><ul class="highlights no-break"><li>security and compliance</li><li>technological strategy</li><li>DevOps leadership and mentoring</li><li>cost-effective architectures</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position">Full-stack developer (free time)</span><span class="company-location margin-text-1"><a href="https://www.unismart.it/">UniSMART - University of Padua Foundation</a></span></div><div class="right"><span class="dates">Nov 2020 - Apr 2021</span></div></div></div><div class="summary markdown"><p>Implement the Academy Web Portal to allow Master's course proposals management</p>
-</div><ul class="highlights no-break"><li>Analysis of requirements and architecture</li><li>Design the User Experience (with Vue.js)</li><li>Server-side Rendering (with Nuxt.js)</li><li>Design the APIs (with Strapi)</li><li>Modeling a MongoDB database</li><li>Manage SEO and legal aspects</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position">DevOps Engineer</span><span class="company-location margin-text-1"><a href="https://www.thron.com/">THRON S.p.A.</a></span></div><div class="right"><span class="dates">Jan 2012 - Jan 2018</span></div></div></div><div class="summary markdown"><p>Mainly, my energies are focused on:</p>
+</div><ul class="highlights margin-text-4 no-break"><li>security and compliance</li><li>technological strategy</li><li>DevOps leadership and mentoring</li><li>cost-effective architectures</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Full-stack developer (free time)</span><span class="subtitle margin-text-1"><a href="https://www.unismart.it/">UniSMART - University of Padua Foundation</a></span></div><div class="right"><span class="date">Nov 2020 - Apr 2021</span></div></div></div><div class="summary markdown margin-text-4"><p>Implement the Academy Web Portal to allow Master's course proposals management</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Analysis of requirements and architecture</li><li>Design the User Experience (with Vue.js, SSR, Nuxt.js)</li><li>Design the APIs (with Strapi, based on MongoDB)</li><li>Manage SEO and legal aspects</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">DevOps Engineer</span><span class="subtitle margin-text-1"><a href="https://www.thron.com/">THRON S.p.A.</a></span></div><div class="right"><span class="date">Jan 2012 - Jan 2018</span></div></div></div><div class="summary markdown margin-text-4"><p>Mainly, my energies are focused on:</p>
 <ul>
 <li>migrate the physical datacenters to the AWS cloud</li>
 <li>switch workloads from Windows to Linux</li>
 <li>develop automated workflows to build and securely deploy the code</li>
 <li>encourage adoption of new design patterns and methodologies (microservices, containerization, serverless)</li>
 <li>manage a CDN layer in front of the origins to improve their performance, reachability, and availability (also for China)</li>
-<li>maintain the MongoDB clusters to an EC2 implementation</li>
-<li>contribute to the media-conversion system refactoring</li>
 <li>define the backup and disaster recovery strategies of the platform</li>
 <li>create tools for developers to help their day-by-day projects</li>
 <li>evolve a huge Live Media Streaming worldwide ecosystem with CDN accelerations</li>
 </ul>
-</div><ul class="highlights no-break"><li>cloud migration</li><li>architectural simplification</li><li>automated deployment</li><li>microservices</li><li>containerization</li><li>serverless approach</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position">Full-stack Developer</span><span class="company-location margin-text-1"><a href="https://www.thron.com/">THRON S.p.A.</a></span></div><div class="right"><span class="dates">Apr 2011 - Jan 2012</span></div></div></div><div class="summary markdown"><p>Analysis, design, and development of a prototype network appliance to improve the delivery and caching of contents in customer networks</p>
-</div><ul class="highlights no-break"><li>delivery optimization</li><li>transparent caching</li><li>on-premise devices and IDCs</li><li>DNS manipulation</li></ul></div></div></div></div><div class="side"><div class="skills margin-container-4"><p class="section-title no-alone-1">Skills</p><div class="container"><div class="article no-break"><span>Cloud</span><ul class="margin-text-1"><li>AWS</li><li>Serverless</li><li>SQL/NoSQL DBs</li></ul></div><div class="article no-break"><span>Networking</span><ul class="margin-text-1"><li>API Gateway</li><li>Service Mesh</li><li>Nginx</li></ul></div><div class="article no-break"><span>DevOps</span><ul class="margin-text-1"><li>GitOps</li><li>CI / CD</li><li>Jenkins, Ansible</li><li>Linux</li><li>Prometheus</li></ul></div><div class="article no-break"><span>Containers</span><ul class="margin-text-1"><li>Docker</li><li>AWS ECS</li><li>Kubernetes</li></ul></div><div class="article no-break"><span>CDN</span><ul class="margin-text-1"><li>Akamai / Caching</li><li>China Delivery</li></ul></div><div class="article no-break"><span>Big Data</span><ul class="margin-text-1"><li>Spark</li><li>ETL pipelines</li><li>ELK stacks</li></ul></div><div class="article no-break"><span>Streaming</span><ul class="margin-text-1"><li>Wowza</li><li>AWS MediaLive</li></ul></div><div class="article no-break"><span>Languages</span><ul class="margin-text-1"><li>Python / Bash</li><li>Java / Javascript</li><li>Go / Scala</li></ul></div><div class="article no-break"><span>Soft</span><ul class="margin-text-1"><li>Problem-solving</li><li>Critical thinking</li><li>Communication</li><li>Leadership</li></ul></div></div></div><div class="education margin-container-4"><p class="section-title no-alone-1">Education</p><div class="container"><div class="article margin-container-2 no-break"><div class="title markdown"><p>Bachelor, Computer Science</p>
-</div><span class="institution margin-text-1"><a>University of Padua</a></span></div></div></div><div class="certificates margin-container-4"><p class="section-title no-alone-1">Certificates</p><div class="container"><div class="article margin-container-2 no-break"><div class="name markdown"><a href="https://www.credly.com/badges/cf3637bf-115f-4da9-b39c-926367ecee19"><p>AWS Solutions Architect – Associate</p>
-</a></div><span class="issuer">Amazon Web Services (AWS)</span></div></div></div><div class="languages margin-container-4 no-break"><p class="section-title no-alone-1">Languages</p><div class="container"><ul><li class="article margin-text-1">Italian · Native speaker</li><li class="article margin-text-1">English · Fluent speaker</li></ul></div></div><div class="links margin-container-4 no-break"><p class="section-title no-alone-1">Links</p><div class="container"><ul><li class="article"><a href="https://andrea.mandolo.net/"><strong>andrea.mandolo.net</strong></a></li><li class="article margin-text-2"><a href="https://www.linkedin.com/in/andrea-mandolo/"><strong>linkedin.com</strong>/in/andrea-mandolo</a></li><li class="article margin-text-2"><a href="https://github.com/amandolo"><strong>github.com</strong>/amandolo</a></li></ul></div></div></div></div></div></body></html>
+</div><ul class="highlights margin-text-4 no-break"><li>cloud migration</li><li>architectural simplification</li><li>automated deployment</li><li>microservices</li><li>containerization</li><li>serverless approach</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Full-stack Developer</span><span class="subtitle margin-text-1"><a href="https://www.thron.com/">THRON S.p.A.</a></span></div><div class="right"><span class="date">Apr 2011 - Jan 2012</span></div></div></div><div class="summary markdown margin-text-4"><p>Analysis, design, and development of a prototype network appliance to improve the delivery and caching of contents in customer networks</p>
+</div><ul class="highlights margin-text-4 no-break"><li>delivery optimization</li><li>transparent caching</li><li>on-premise devices and IDCs</li><li>DNS manipulation</li></ul></div></div></div></div><div class="side"><div class="skills margin-container-4"><p class="section-title no-alone-1">Skills</p><div class="container"><div class="article no-break"><span>Cloud</span><ul class="margin-text-2"><li>AWS</li><li>Serverless</li><li>SQL/NoSQL DBs</li></ul></div><div class="article no-break"><span>Networking</span><ul class="margin-text-2"><li>API Gateway</li><li>Service Mesh</li><li>Nginx</li></ul></div><div class="article no-break"><span>DevOps</span><ul class="margin-text-2"><li>GitOps</li><li>CI / CD</li><li>Jenkins, Ansible</li><li>Linux</li><li>Prometheus</li></ul></div><div class="article no-break"><span>Containers</span><ul class="margin-text-2"><li>Docker</li><li>AWS ECS</li><li>Kubernetes</li></ul></div><div class="article no-break"><span>CDN</span><ul class="margin-text-2"><li>Akamai / China</li></ul></div><div class="article no-break"><span>Big Data</span><ul class="margin-text-2"><li>Spark</li><li>ETL pipelines</li><li>ELK stacks</li></ul></div><div class="article no-break"><span>Streaming</span><ul class="margin-text-2"><li>Wowza</li><li>AWS MediaLive</li></ul></div><div class="article no-break"><span>Languages</span><ul class="margin-text-2"><li>Python / Bash</li><li>Java / Javascript</li><li>Go / Scala</li></ul></div><div class="article no-break"><span>Soft</span><ul class="margin-text-2"><li>Problem-solving</li><li>Communication</li><li>Leadership</li></ul></div></div></div><div class="education margin-container-4"><p class="section-title no-alone-1">Education</p><div class="container"><div class="article margin-container-2 no-break"><div class="title markdown"><p>Bachelor, Computer Science</p>
+</div><span class="institution margin-text-2"><a>University of Padua</a></span></div></div></div><div class="certificates margin-container-4"><p class="section-title no-alone-1">Certificates</p><div class="container"><div class="article margin-container-2 no-break"><div class="name markdown"><a href="https://www.credly.com/badges/cf3637bf-115f-4da9-b39c-926367ecee19"><p>AWS Solutions Architect – Associate</p>
+</a></div><span class="issuer margin-text-2">Amazon Web Services (AWS)</span></div></div></div><div class="languages margin-container-4 no-break"><p class="section-title no-alone-1">Languages</p><div class="container"><ul><li class="article margin-text-2">Italian · Native speaker</li><li class="article margin-text-2">English · Fluent speaker</li></ul></div></div><div class="links margin-container-4 no-break"><p class="section-title no-alone-1">Links</p><div class="container"><ul><li class="article"><a href="https://andrea.mandolo.net/"><strong>andrea.mandolo.net</strong></a></li><li class="article margin-text-4"><a href="https://www.linkedin.com/in/andrea-mandolo/"><strong>linkedin.com</strong>/in/andrea-mandolo</a></li><li class="article margin-text-4"><a href="https://github.com/amandolo"><strong>github.com</strong>/amandolo</a></li></ul></div></div></div></div></div></body></html>
