@@ -22,15 +22,20 @@ basics:
     url: https://github.com/amandolo
 
   summary: |-
-    Passionate about infrastructure development. Committed from 10 years to automate everything that makes the developer's life better.
+    Passionate about infrastructure development. Committed from 11 years to automate everything that makes the developer's life better.
 
     Always searching for the simplest, cost-effective, and most maintainable solutions, always assuring the best level of security as possible.
 
 work:
+- name: lastminute.com
+  position: DevOps Engineer
+  url: https://www.lastminute.com/
+  startDate: '2022-09'
 - name: THRON S.p.A.
   position: Senior DevOps Engineer
   url: https://www.thron.com/
   startDate: '2018-01'
+  endDate: '2022-09'
   summary: |-
     During these years my main responsibilities are:
     - evolve the infrastructure and development processes (k8s and CD)
@@ -40,7 +45,6 @@ work:
     - adopting best practices everywhere, to achieve the ISO-27001 certification
     - optimize AWS costs with detailed reservation plans and cost-effective architectures
     - refactor the AWS organization, to easily manage the existing accounts and the new ones
-    - migrate on-premise MongoDb clusters to the Atlas managed ecosystem
   highlights:
   - security and compliance
   - technological strategy
@@ -54,10 +58,8 @@ work:
   summary: Implement the Academy Web Portal to allow Master's course proposals management
   highlights:
   - Analysis of requirements and architecture
-  - Design the User Experience (with Vue.js)
-  - Server-side Rendering (with Nuxt.js)
-  - Design the APIs (with Strapi)
-  - Modeling a MongoDB database
+  - Design the User Experience (with Vue.js, SSR, Nuxt.js)
+  - Design the APIs (with Strapi, based on MongoDB)
   - Manage SEO and legal aspects
 - name: THRON S.p.A.
   position: DevOps Engineer
@@ -71,8 +73,6 @@ work:
     - develop automated workflows to build and securely deploy the code
     - encourage adoption of new design patterns and methodologies (microservices, containerization, serverless)
     - manage a CDN layer in front of the origins to improve their performance, reachability, and availability (also for China)
-    - maintain the MongoDB clusters to an EC2 implementation
-    - contribute to the media-conversion system refactoring
     - define the backup and disaster recovery strategies of the platform
     - create tools for developers to help their day-by-day projects
     - evolve a huge Live Media Streaming worldwide ecosystem with CDN accelerations
@@ -142,8 +142,7 @@ skills:
   - Kubernetes
 - name: CDN
   keywords:
-  - Akamai / Caching
-  - China Delivery
+  - Akamai / China
 - name: Big Data
   keywords:
   - Spark
@@ -161,7 +160,6 @@ skills:
 - name: Soft
   keywords:
   - Problem-solving
-  - Critical thinking
   - Communication
   - Leadership
 
